@@ -1,0 +1,146 @@
+.alerta {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: white;
+    border: 1px solid #1d1b1b57;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.alerta header {
+    padding: 5px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.alerta header img {
+    width: 45px;
+    /* Ajusta el tamaño según necesites */
+    height: auto;
+    /* Para mantener la proporción */
+}
+
+.alerta div {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-top: 0.5px solid rgba(48, 45, 45, 0.678);
+}
+
+.alerta button {
+
+    gap: 5px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+    padding: 0 32px;
+    border-radius: 6px;
+    height: 40px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+
+
+}
+
+.btncontainer {
+    margin-top: 10px;
+    /* Ajusta el margen superior según sea necesario */
+}
+
+.btncontainer button {
+    margin-left: 10px;
+    /* Añade un espacio entre los botones */
+}
+
+.custom-popover {
+    --bs-popover-max-width: 300px;
+    --bs-popover-border-color: gray;
+    --bs-popover-header-bg: #B6EDF6;
+    --bs-popover-header-color: black;
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+}
+
+/* Pantallas pequeñas */
+@media(max-width: 768px) {
+    .alerta {
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 400px;
+    }
+
+    .alerta header {
+        font-size: 1.2em;
+    }
+
+    .alerta header img {
+        width: 35px;
+    }
+
+    .alerta div {
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .alerta button {
+        padding: 0 20px;
+        height: 35px;
+    }
+
+    .btncontainer {
+        margin-top: 5px;
+    }
+
+    .btncontainer button {
+        margin-left: 5px;
+    }
+}
+
+@media(max-width: 400px) {
+    .alerta {
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 300px;
+    }
+
+    .alerta header {
+        font-size: 1.2em;
+    }
+
+    .alerta header img {
+        width: 25px;
+    }
+
+    .alerta div {
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .alerta button {
+        padding: 0 20px;
+        height: 35px;
+    }
+
+    .btncontainer {
+        margin-top: 5px;
+    }
+
+    .btncontainer button {
+        margin-left: 5px;
+    }
+}
